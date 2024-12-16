@@ -1,13 +1,17 @@
 import React from "react"
-import {AboutDescription, AboutGreeting, AboutSectionDisplayName} from "../pagesMessages"
-
+import {AboutDescription, AboutGreeting} from "../pagesMessages"
+import "./AboutSection.scss"
 
 const AboutSectionComponent: React.FC = () => {
   return (
-    <div>
-      <h1>{AboutSectionDisplayName}</h1>
-      <div>{AboutGreeting}</div>
-      <span>{AboutDescription}</span>
+    <div className="aboutSection">
+      <img
+        className="image"
+        src="https://avatars.githubusercontent.com/u/97584835?v=4"></img>
+      <div>
+        <div>{AboutGreeting}</div>
+        <span>{AboutDescription}</span>
+      </div>
     </div>
   )
 }

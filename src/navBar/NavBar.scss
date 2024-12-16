@@ -1,25 +1,28 @@
 @import "../styles/spacing.scss";
+@import "../styles/colour.scss";
+@import "../styles/font.scss";
 
 $nav-bar-height: 80px;
 
 .navBar {
   position: fixed;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: $nav-bar-height;
   display: flex;
   justify-content: center;
-  border-bottom: 5px solid black; // todo: jma - remove
+  background-color: $secondary-colour;
 
   .navBarItemList {
     display: flex;
     width: 60%;
     align-items: center;
+    list-style: none;
 
     .navBarItem {
       flex-grow: 1;
-      font-size: 32px; // todo: jma - move to 
-      margin: $small;
+      font-size: $large-font-size;
+      margin: $small-spacing;
       text-align: center;
     }
   }

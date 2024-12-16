@@ -1,0 +1,19 @@
+@import "../navBar/NavBar.scss";
+@import "../styles/spacing.scss";
+@import "../styles/font.scss";
+
+.sections {
+  margin-top: $nav-bar-height;
+
+  .section {
+    padding: $xx-large-spacing $xxx-large-spacing;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .sectionHeader {
+      font-size: $x-large-font-size;
+    }
+  }
+}

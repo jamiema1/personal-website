@@ -1,7 +1,8 @@
-@import "./styles/colours.scss";
+@import "./styles/colour.scss";
 
 html, body {
   margin: 0;
-  background-color: $background;
+  padding: 0;
+  background-color: $background-colour;
   color: $font-colour
 }

@@ -1,0 +1,26 @@
+@import "../../styles/font.scss";
+@import "../../styles/colour.scss";
+
+$experience-width: 200px;
+$experience-height: 200px;
+
+.experienceSection {
+
+  width: 100%;
+
+  .experienceList {
+    display: flex;
+    justify-content: space-around;
+
+    .experience {
+      width: $experience-width;
+      height: $experience-height;
+      text-align: center;
+      align-content: center;
+      font-size: $large-font-size;
+      border: 3px solid black;
+      border-radius: 10px;
+      background-color: $secondary-colour;
+    }
+  }
+}

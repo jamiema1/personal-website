@@ -1,5 +1,5 @@
-@import "./navBar/NavBar.scss";
+@import "./styles/font.scss";
 
-.sections {
-  margin-top: $nav-bar-height;
+.App {
+  font-size: $medium-font-size;
 }

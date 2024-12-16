@@ -1,0 +1,29 @@
+@import "../../styles/font.scss";
+@import "../../styles/colour.scss";
+@import "../../styles/spacing.scss";
+
+$experience-width: 200px;
+$experience-height: 200px;
+
+.skillsSection {
+
+  width: 100%;
+
+  .skillsList {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: $medium-spacing;
+    justify-items: center;
+
+    .skill {
+      width: $experience-width;
+      height: $experience-height;
+      text-align: center;
+      align-content: center;
+      font-size: $large-font-size;
+      // border: 3px solid black;
+      border-radius: 10px;
+      background-color: $secondary-colour;
+    }
+  }
+}

@@ -1,0 +1,8 @@
+.navBar {
+  position: fixed;
+  margin: 40px;
+}
+
+.navBarSectionList {
+  display: flex;
+}

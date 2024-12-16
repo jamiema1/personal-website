@@ -1,0 +1,26 @@
+@import "../styles/spacing.scss";
+
+$nav-bar-height: 80px;
+
+.navBar {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: $nav-bar-height;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid black; // todo: jma - remove
+
+  .navBarItemList {
+    display: flex;
+    width: 60%;
+    align-items: center;
+
+    .navBarItem {
+      flex-grow: 1;
+      font-size: 32px; // todo: jma - move to 
+      margin: $small;
+      text-align: center;
+    }
+  }
+}

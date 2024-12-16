@@ -1,12 +1,12 @@
 import React, {useRef} from "react"
 import {
-  AboutSectionDisplayName,
   ExperienceSectionDisplayName,
   ProjectsSectionDisplayName,
   SkillsSectionDisplayName
 } from "./pages/pagesMessages"
 import AboutSectionComponent from "./pages/aboutSection/AboutSectionComponent"
 import NavBarComponent from "./navBar/NavBarComponent"
+import "./App.scss"
 
 export type SectionRefType = HTMLElement | null
 
@@ -25,7 +25,7 @@ function App() {
         skillsSectionRef={skillsSectionRef}
         aboutMeSectionRef={aboutMeSectionRef}
       />
-      <div className="section-list">
+      <div className="sections">
         <section ref={aboutMeSectionRef}>
           <AboutSectionComponent />
         </section>

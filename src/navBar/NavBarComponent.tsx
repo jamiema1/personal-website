@@ -1,7 +1,7 @@
 import React from "react"
 import {SectionRefType} from "../App"
 import {AboutSectionDisplayName, ExperienceSectionDisplayName, ProjectsSectionDisplayName, SkillsSectionDisplayName} from "../pages/pagesMessages"
-import "./NavBar.css"
+import "./NavBar.scss"
 
 interface NavBarProps {
   aboutMeSectionRef: React.RefObject<SectionRefType>,
@@ -17,20 +17,28 @@ const scrollToSection = (ref: React.RefObject<SectionRefType>) => {
 const NavBarComponent: React.FC<NavBarProps> = (props) => {
   return (
     <div className="navBar">
-      <ul className="navBarSectionList">
-        <li onClick={() => scrollToSection(props.aboutMeSectionRef)}>
+      <div className="navBarItemList">
+        <div
+          className="navBarItem"
+          onClick={() => scrollToSection(props.aboutMeSectionRef)}>
           {AboutSectionDisplayName}
-        </li>
-        <li onClick={() => scrollToSection(props.projectsSectionRef)}>
+        </div>
+        <div
+          className="navBarItem"
+          onClick={() => scrollToSection(props.projectsSectionRef)}>
           {ProjectsSectionDisplayName}
-        </li>
-        <li onClick={() => scrollToSection(props.experienceSectionRef)}>
+        </div>
+        <div
+          className="navBarItem"
+          onClick={() => scrollToSection(props.experienceSectionRef)}>
           {ExperienceSectionDisplayName}
-        </li>
-        <li onClick={() => scrollToSection(props.skillsSectionRef)}>
+        </div>
+        <div
+          className="navBarItem"
+          onClick={() => scrollToSection(props.skillsSectionRef)}>
           {SkillsSectionDisplayName}
-        </li>
-      </ul>
+        </div>
+      </div>
     </div>
   )
 }

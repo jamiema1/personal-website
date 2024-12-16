@@ -1,0 +1,7 @@
+@import "./styles/colours.scss";
+
+html, body {
+  margin: 0;
+  background-color: $background;
+  color: $font-colour
+}

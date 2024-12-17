@@ -1,4 +1,4 @@
-import { Skill } from "./skill"
+import { Skill, Skills } from "./skill"
 
 interface Project {
   name: string,
@@ -10,36 +10,62 @@ export const ALL_PROJECTS: Project[] = [
   {
     name: "Boulder Tracker",
     description: "",
-    skills: []
+    skills: [
+      Skills.react,
+      Skills.javascript,
+      Skills.css,
+      Skills.html,
+      Skills.sql,
+      Skills.aws,
+      Skills.node,
+    ]
   },
   {
     name: "Notifire",
     description: "",
-    skills: []
+    skills: [
+      Skills.reactNative,
+      Skills.expo,
+      Skills.javascript,
+    ]
   },
   {
     name: "Minute Mood",
     description: "",
-    skills: []
+    skills: [
+      Skills.react,
+      Skills.javascript,
+      Skills.css,
+      Skills.html,
+    ]
   },
   {
     name: "2048",
     description: "",
-    skills: []
+    skills: [
+      Skills.python,
+    ]
   },
   {
     name: "Minesweeper",
     description: "",
-    skills: []
+    skills: [
+      Skills.java,
+      Skills.jUnit,
+    ]
   },
   {
     name: "Baseball Simulator",
     description: "",
-    skills: []
+    skills: [
+      Skills.cPlusPlus,
+    ]
   },
   {
     name: "Predicting Heart Disease",
     description: "",
-    skills: []
+    skills: [
+      Skills.r,
+    ]
   },
 ]

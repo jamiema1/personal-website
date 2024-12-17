@@ -1,9 +1,11 @@
-@import "../../styles/font.scss";
-@import "../../styles/colour.scss";
-@import "../../styles/spacing.scss";
+@use "@styles/font.scss";
+@use "@styles/colour.scss";
+@use "@styles/spacing.scss";
 
-$experience-width: 200px;
-$experience-height: 200px;
+$skill-width: 200px;
+$skill-height: 200px;
+
+$skill-logo-size: 100px;
 
 .skillsSection {
   width: 100%;
@@ -11,18 +13,39 @@ $experience-height: 200px;
   .skillsList {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: $medium-spacing;
+    gap: spacing.$medium;
     justify-items: center;
 
     .skill {
-      width: $experience-width;
-      height: $experience-height;
+      width: $skill-width;
+      height: $skill-height;
       text-align: center;
       align-content: center;
-      font-size: $large-font-size;
+      font-size: font.$large;
       // border: 3px solid black;
       border-radius: 10px;
-      background-color: $secondary-colour;
+      background-color: colour.$secondary;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: color 0.3s ease;
+
+      .skillLogo {
+        width: $skill-logo-size;
+        height: $skill-logo-size;
+        background-color: black;
+        border-radius: 50%;
+        margin-bottom: spacing.$small;
+      }
+
+      .skillName {
+        font-size: font.$medium;
+      }
+      
+      &:hover {
+        color: colour.$accent;
+      }
     }
   }
 }

@@ -1,6 +1,6 @@
-@import "../styles/spacing.scss";
-@import "../styles/colour.scss";
-@import "../styles/font.scss";
+@use "@styles/spacing.scss";
+@use "@styles/colour.scss";
+@use "@styles/font.scss";
 
 $nav-bar-height: 80px;
 
@@ -11,7 +11,8 @@ $nav-bar-height: 80px;
   height: $nav-bar-height;
   display: flex;
   justify-content: center;
-  background-color: $secondary-colour;
+  background-color: colour.$secondary;
+  // todo: jma - add shrinking effect upon scroll
 
   .navBarItemList {
     display: flex;
@@ -21,9 +22,10 @@ $nav-bar-height: 80px;
 
     .navBarItem {
       flex-grow: 1;
-      font-size: $large-font-size;
-      margin: $small-spacing;
+      font-size: font.$large;
+      margin: spacing.$small;
       text-align: center;
+      // todo: jma - add hover effect
     }
   }
 }

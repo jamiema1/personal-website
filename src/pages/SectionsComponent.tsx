@@ -5,7 +5,7 @@ import {
   ExperienceSectionDisplayName,
   ProjectsSectionDisplayName,
   SkillsSectionDisplayName
-} from "../pages/pagesMessages"
+} from "./sectionsMessages"
 import AboutSectionComponent from "./aboutSection/AboutSectionComponent"
 import ExperienceSectionComponent from "./experienceSection/ExperienceSectionComponent"
 import SkillsSectionComponent from "./skillsSection/SkillsSectionComponent"

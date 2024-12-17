@@ -1,25 +1,47 @@
-@import "../../styles/font.scss";
-@import "../../styles/colour.scss";
+@use "@styles/font.scss";
+@use "@styles/colour.scss";
+@use "@styles/spacing.scss";
 
 $project-width: 200px;
 $project-height: 200px;
 
 .projectsSection {
-  width: 100%;
+  width: 60%;
+  overflow: hidden;
 
   .projectsList {
     display: flex;
     justify-content: space-around;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateX(200px);
+    }
 
     .project {
       width: $project-width;
       height: $project-height;
       text-align: center;
       align-content: center;
-      font-size: $large-font-size;
+      font-size: font.$large;
       border: 3px solid black;
       border-radius: 10px;
-      background-color: $secondary-colour;
+      background-color: colour.$secondary;
+      padding: spacing.$x-small;
+
+      .projectSkillList {
+        display: flex;
+        flex-wrap: wrap;
+        gap: spacing.$x-small;
+
+        .projectSkill {
+          font-size: font.$small;
+          padding: spacing.$x-small;
+          border: 3px solid colour.$accent;
+          color: colour.$accent;
+          border-radius: 10px;
+        }
+      }
     }
   }
 }

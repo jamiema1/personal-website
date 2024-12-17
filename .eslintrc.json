@@ -21,6 +21,7 @@
   "rules": {
     "indent": ["error", 2],
     "max-lines": ["error", 300],
+    "semi": ["error", "never"],
     "max-len": [
       "error",
       80,
@@ -29,9 +30,14 @@
         "ignoreUrls": true
       }
     ],
-    "react/prop-types": 0,
     "object-curly-spacing": ["error", "always"],
+    "react/prop-types": 0,
     "react/no-unescaped-entities": 0,
-    "semi": ["error", "never"]
+    "@typescript-eslint/no-empty-function": [
+      "error",
+      {
+        "allow": ["private-constructors", "protected-constructors"]
+      }
+    ]
   }
 }

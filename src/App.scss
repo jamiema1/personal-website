@@ -1,5 +1,10 @@
-@import "./styles/font.scss";
+@use "@styles/font.scss";
+@use "@styles/colour.scss";
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 .App {
-  font-size: $medium-font-size;
+  font-family: "Figtree";
+  font-size: font.$medium;
+  background-color: colour.$background;
+  color: colour.$font
 }

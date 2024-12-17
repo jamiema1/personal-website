@@ -1,5 +1,5 @@
 import React from "react"
-import { ALL_PROJECTS } from "../../models/project"
+import { ALL_PROJECTS } from "@models/project"
 import "./ProjectsSection.scss"
 
 const ProjectsSectionComponent: React.FC = () => {
@@ -11,6 +11,16 @@ const ProjectsSectionComponent: React.FC = () => {
             key={project.name}
             className="project">
             {project.name}
+            {project.description}
+            <div className="projectSkillList">
+              {project.skills.map(skill =>
+                <div
+                  key={skill.name}
+                  className="projectSkill">
+                  {skill.name}
+                </div>
+              )}
+            </div>
           </div>
         )}
       </div>

@@ -1,4 +1,6 @@
-@import "../../styles/spacing.scss";
+@use "@styles/spacing.scss";
+
+$logo-size: 50px;
 
 .aboutSection {
 
@@ -7,7 +9,21 @@
   .image {
     border-radius: 50%;
     width: 250px;
-    padding: $medium-spacing;
+    padding: 0px spacing.$xx-large;
+    margin-bottom: spacing.$small;
+  }
+
+  .links {
+    display: flex;
+    justify-content: center;
+    gap: spacing.$medium;
+
+    .link {
+      width: $logo-size;
+      height: $logo-size;
+      background-color: black;
+      border-radius: 50%;
+    }
   }
 
 }

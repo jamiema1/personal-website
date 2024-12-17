@@ -1,0 +1,27 @@
+@use "@styles/font.scss";
+@use "@styles/colour.scss";
+@use "@styles/spacing.scss";
+
+$dropdown-icon-size: 25px;
+
+.experience {
+  font-size: font.$medium;
+  border: 3px solid black;
+  border-radius: 10px;
+  background-color: colour.$secondary;
+  padding: spacing.$large spacing.$medium;
+  margin: spacing.$small;
+
+  .collapsedExperienceContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .dropdownIcon {
+      width: $dropdown-icon-size;
+      height: $dropdown-icon-size;
+      background-color: black;
+      border-radius: 50%;
+    }
+  }
+}

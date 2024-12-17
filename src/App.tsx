@@ -1,4 +1,4 @@
-import React, {useRef} from "react"
+import React, { useRef } from "react"
 import NavBarComponent from "./navBar/NavBarComponent"
 import SectionsComponent from "./pages/SectionsComponent"
 import "./App.scss"

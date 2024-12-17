@@ -5,7 +5,7 @@ import {
   ExperienceSectionDisplayName,
   ProjectsSectionDisplayName,
   SkillsSectionDisplayName
-} from "../pages/pagesMessages"
+} from "../pages/sectionsMessages"
 import "./NavBar.scss"
 
 interface NavBarProps {

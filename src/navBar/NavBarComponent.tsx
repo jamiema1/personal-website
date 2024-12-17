@@ -1,6 +1,11 @@
 import React from "react"
-import {SectionRefType} from "../App"
-import {AboutSectionDisplayName, ExperienceSectionDisplayName, ProjectsSectionDisplayName, SkillsSectionDisplayName} from "../pages/pagesMessages"
+import { SectionRefType } from "../App"
+import {
+  AboutSectionDisplayName,
+  ExperienceSectionDisplayName,
+  ProjectsSectionDisplayName,
+  SkillsSectionDisplayName
+} from "../pages/pagesMessages"
 import "./NavBar.scss"
 
 interface NavBarProps {
@@ -11,7 +16,7 @@ interface NavBarProps {
 } 
 
 const scrollToSection = (ref: React.RefObject<SectionRefType>) => {
-  ref?.current?.scrollIntoView({behavior: "smooth"})
+  ref?.current?.scrollIntoView({ behavior: "smooth" })
 }
 
 const NavBarComponent: React.FC<NavBarProps> = (props) => {

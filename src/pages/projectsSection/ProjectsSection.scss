@@ -1,19 +1,19 @@
 @import "../../styles/font.scss";
 @import "../../styles/colour.scss";
 
-$experience-width: 200px;
-$experience-height: 200px;
+$project-width: 200px;
+$project-height: 200px;
 
-.experienceSection {
+.projectsSection {
   width: 100%;
 
-  .experienceList {
+  .projectsList {
     display: flex;
     justify-content: space-around;
 
-    .experience {
-      width: $experience-width;
-      height: $experience-height;
+    .project {
+      width: $project-width;
+      height: $project-height;
       text-align: center;
       align-content: center;
       font-size: $large-font-size;

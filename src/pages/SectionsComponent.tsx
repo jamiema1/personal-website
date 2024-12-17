@@ -1,5 +1,5 @@
 import React from "react"
-import {SectionRefType} from "../App"
+import { SectionRefType } from "../App"
 import {
   AboutSectionDisplayName,
   ExperienceSectionDisplayName,
@@ -7,9 +7,10 @@ import {
   SkillsSectionDisplayName
 } from "../pages/pagesMessages"
 import AboutSectionComponent from "./aboutSection/AboutSectionComponent"
-import "./Sections.scss"
 import ExperienceSectionComponent from "./experienceSection/ExperienceSectionComponent"
 import SkillsSectionComponent from "./skillsSection/SkillsSectionComponent"
+import ProjectsSectionComponent from "./projectsSection/ProjectsSectionComponent"
+import "./Sections.scss"
 
 interface SectionsProps {
   aboutSectionRef: React.RefObject<SectionRefType>,
@@ -43,11 +44,7 @@ const SectionsComponent: React.FC<SectionsProps> = (props) => {
         <h1 className="sectionHeader">
           {ProjectsSectionDisplayName}
         </h1>
-        <ul>
-          <li>Visier</li>
-          <li>Teck</li>
-          <li>UBC TA</li>
-        </ul>
+        <ProjectsSectionComponent />
       </div>
       <div className="section"
         ref={props.skillsSectionRef}>

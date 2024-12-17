@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TODO: jma - update README
 
 ## Available Scripts
 
@@ -72,5 +70,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 ### run `nvm use` to ensure the correct node version is currently being used
-
+### run `npm install` to install node modules
 ### run `npm start` to runs the app in development mode locally

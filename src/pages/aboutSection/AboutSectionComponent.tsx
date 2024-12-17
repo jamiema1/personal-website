@@ -1,5 +1,5 @@
 import React from "react"
-import {AboutDescription, AboutGreeting} from "../pagesMessages"
+import { AboutDescription, AboutGreeting } from "../pagesMessages"
 import "./AboutSection.scss"
 
 const AboutSectionComponent: React.FC = () => {

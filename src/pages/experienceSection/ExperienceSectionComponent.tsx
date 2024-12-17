@@ -1,20 +1,18 @@
 import React from "react"
+import { ALL_EXPERIENCES } from "../../models/experience"
 import "./ExperienceSection.scss"
 
 const ExperienceSectionComponent: React.FC = () => {
   return (
     <div className="experienceSection">
       <div className="experienceList">
-        <div className="experience">
-        Visier
-        </div>
-        <div className="experience">
-        Teck
-        </div>
-        <div className="experience">
-        UBC TA
-        </div>
-
+        {ALL_EXPERIENCES.map(experience =>
+          <div
+            key={experience.companyName}
+            className="experience">
+            {experience.companyName}: {experience.position}
+          </div>
+        )}
       </div>
     </div>
   )

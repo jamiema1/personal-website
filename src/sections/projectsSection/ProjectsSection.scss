@@ -28,20 +28,6 @@ $project-height: 200px;
       border-radius: 10px;
       background-color: colour.$secondary;
       padding: spacing.$x-small;
-
-      .projectSkillList {
-        display: flex;
-        flex-wrap: wrap;
-        gap: spacing.$x-small;
-
-        .projectSkill {
-          font-size: font.$small;
-          padding: spacing.$x-small;
-          border: 3px solid colour.$accent;
-          color: colour.$accent;
-          border-radius: 10px;
-        }
-      }
     }
   }
 }

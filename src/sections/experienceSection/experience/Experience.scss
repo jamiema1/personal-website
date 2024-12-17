@@ -24,4 +24,15 @@ $dropdown-icon-size: 25px;
       border-radius: 50%;
     }
   }
+
+  .experienceDate {
+    font-style: italic;
+    font-size: 20px;
+    padding: spacing.$small 0px;
+  }
+
+  .experienceDescription {
+  
+    font-size: 20px;
+  }
 }

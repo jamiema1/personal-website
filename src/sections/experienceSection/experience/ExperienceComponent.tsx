@@ -3,6 +3,7 @@ import React, { useState } from "react"
 import { Experience } from "@models/experience"
 import "./Experience.scss"
 import { ExperiencePresentDisplayMessage } from "pages/sectionsMessages"
+import SkillPillListComponent from "pages/skillsSection/skillPillList/SkillPillListComponent"
 
 function formatExperienceDisplayName(experience: Experience): string {
   return `${experience.position} @ ${experience.companyName}`
@@ -21,6 +22,8 @@ interface ExperienceProps {
 
 const ExperienceComponent: React.FC<ExperienceProps> = (props) => {
 
+  const experience = props.experience
+
   const [state, setState] = useState(false)
 
   const handleClick = () => {
@@ -29,11 +32,11 @@ const ExperienceComponent: React.FC<ExperienceProps> = (props) => {
 
   return (
     <div
-      key={props.experience.companyName}
+      key={experience.companyName}
       className="experience">
       <div className="collapsedExperienceContainer">
         <div>
-          {formatExperienceDisplayName(props.experience)}
+          {formatExperienceDisplayName(experience)}
         </div>
         <div
           className="dropdownIcon"
@@ -43,10 +46,13 @@ const ExperienceComponent: React.FC<ExperienceProps> = (props) => {
       </div>
       {state &&
        <div>
-         <div>
-           {formatTimeDisplayName(props.experience)}
+         <div className="experienceDate">
+           {formatTimeDisplayName(experience)}
          </div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.
+         <div className="experienceDescription">
+           {experience.description}
+         </div>
+         <SkillPillListComponent skills={experience.skills} />
        </div>
       }
     </div>

@@ -1,6 +1,7 @@
 import React from "react"
 import { ALL_PROJECTS } from "@models/project"
 import "./ProjectsSection.scss"
+import SkillPillListComponent from "pages/skillsSection/skillPillList/SkillPillListComponent"
 
 const ProjectsSectionComponent: React.FC = () => {
   return (
@@ -12,15 +13,7 @@ const ProjectsSectionComponent: React.FC = () => {
             className="project">
             {project.name}
             {project.description}
-            <div className="projectSkillList">
-              {project.skills.map(skill =>
-                <div
-                  key={skill.name}
-                  className="projectSkill">
-                  {skill.name}
-                </div>
-              )}
-            </div>
+            <SkillPillListComponent skills={project.skills} />
           </div>
         )}
       </div>

@@ -74,8 +74,15 @@ export class Skills {
   static readonly expo: Skill = {
     name: "Expo"
   }
-}
 
+  static readonly powerBI: Skill = {
+    name: "Power BI"
+  }
+
+  static readonly powerAutomate: Skill = {
+    name: "Power Automate"
+  }
+}
 
 export const ALL_SKILLS: Skill[] = [
   Skills.javascript,
@@ -96,4 +103,6 @@ export const ALL_SKILLS: Skill[] = [
   Skills.jUnit,
   Skills.reactNative,
   Skills.expo,
+  Skills.powerBI,
+  Skills.powerAutomate,
 ]

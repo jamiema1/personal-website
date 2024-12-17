@@ -2,24 +2,42 @@
 @use "@styles/colour.scss";
 @use "@styles/spacing.scss";
 
-$project-width: 200px;
-$project-height: 200px;
+$project-height: 450px;
+
+$project-image-size: 200px;
 
 .projectsSection {
   width: 60%;
+}
+
+.projectButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 10px;
+
+  .projectButton {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+  }
+}
+
+
+.projectCarousel {
   overflow: hidden;
 
   .projectsList {
     display: flex;
-    justify-content: space-around;
+    // grid-auto-flow: column;
+    // grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    // grid-template-columns: repeat(auto-fill, 300px);
+    // gap: 10%;
     transition: transform 0.3s ease;
-
-    &:hover {
-      transform: translateX(200px);
-    }
-
+  
     .project {
-      width: $project-width;
+      width: 100%;
       height: $project-height;
       text-align: center;
       align-content: center;
@@ -27,7 +45,26 @@ $project-height: 200px;
       border: 3px solid black;
       border-radius: 10px;
       background-color: colour.$secondary;
-      padding: spacing.$x-small;
+      padding: spacing.$small;
+      margin: spacing.$small;
+    
+      display: flex;
+    
+      .projectText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .projectName {
+      
+        }
+      
+        .projectDescription {
+          font-size: font.$small-medium;
+        }
+      }
     }
   }
 }
+
+

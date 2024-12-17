@@ -33,14 +33,15 @@ const ExperienceComponent: React.FC<ExperienceProps> = (props) => {
   return (
     <div
       key={experience.companyName}
-      className="experience">
+      className="experience"
+      onClick={() => handleClick()}
+    >
       <div className="collapsedExperienceContainer">
         <div>
           {formatExperienceDisplayName(experience)}
         </div>
         <div
           className="dropdownIcon"
-          onClick={() => handleClick()}
           // todo: jma - add dropdown icon
         ></div>
       </div>

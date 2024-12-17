@@ -34,6 +34,8 @@ export const ALL_EXPERIENCES: Experience[] = [
     endDate: new Date(2023, 11),
     skills: [
       Skills.python,
+      Skills.powerAutomate,
+      Skills.powerBI,
     ]
   },
   {

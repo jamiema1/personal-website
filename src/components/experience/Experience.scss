@@ -11,6 +11,11 @@ $dropdown-icon-size: 25px;
   background-color: colour.$secondary;
   padding: spacing.$large spacing.$medium;
   margin: spacing.$small;
+  transition: scale 0.3s ease;
+
+  &:hover {
+    scale: 1.03;
+  }
 
   .collapsedExperienceContainer {
     display: flex;
@@ -27,12 +32,11 @@ $dropdown-icon-size: 25px;
 
   .experienceDate {
     font-style: italic;
-    font-size: 20px;
+    font-size: font.$small-medium;
     padding: spacing.$small 0px;
   }
 
   .experienceDescription {
-  
-    font-size: 20px;
+    font-size: font.$small-medium;
   }
 }

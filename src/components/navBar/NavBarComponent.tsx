@@ -1,11 +1,11 @@
 import React from "react"
-import { SectionRefType } from "../App"
+import { SectionRefType } from "@components/app/App"
 import {
   AboutSectionDisplayName,
   ExperienceSectionDisplayName,
   ProjectsSectionDisplayName,
-  SkillsSectionDisplayName
-} from "../pages/sectionsMessages"
+  SkillsSectionDisplayName,
+} from "@messages/messages"
 import "./NavBar.scss"
 
 interface NavBarProps {

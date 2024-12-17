@@ -1,8 +1,8 @@
 /* eslint-disable max-len */
 import React from "react"
 import { ALL_EXPERIENCES } from "@models/experience"
+import ExperienceComponent from "@components/experience/ExperienceComponent"
 import "./ExperienceSection.scss"
-import ExperienceComponent from "./experience/ExperienceComponent"
 
 const ExperienceSectionComponent: React.FC = () => {
   return (

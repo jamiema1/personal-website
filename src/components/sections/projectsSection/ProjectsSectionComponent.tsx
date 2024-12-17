@@ -1,7 +1,7 @@
 import React from "react"
 import { ALL_PROJECTS } from "@models/project"
+import SkillPillListComponent from "@components/skillPillList/SkillPillListComponent"
 import "./ProjectsSection.scss"
-import SkillPillListComponent from "pages/skillsSection/skillPillList/SkillPillListComponent"
 
 const ProjectsSectionComponent: React.FC = () => {
   return (

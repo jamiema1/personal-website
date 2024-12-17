@@ -15,8 +15,10 @@
 		"jsx": "react-jsx",
     "baseUrl": "src",
 		"paths": {
+			"@components/*": ["components/*"],
+			"@messages/*": ["messages/*"],
+			"@models/*": ["models/*"],
 			"@styles/*": ["styles/*"],
-			"@models/*": ["models/*"]
 		}
 	},
 	"include": [

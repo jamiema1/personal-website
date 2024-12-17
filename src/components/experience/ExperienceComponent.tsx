@@ -1,9 +1,9 @@
 /* eslint-disable max-len */
 import React, { useState } from "react"
 import { Experience } from "@models/experience"
+import { ExperiencePresentDisplayMessage } from "messages/messages"
+import SkillPillListComponent from "@components/skillPillList/SkillPillListComponent"
 import "./Experience.scss"
-import { ExperiencePresentDisplayMessage } from "pages/sectionsMessages"
-import SkillPillListComponent from "pages/skillsSection/skillPillList/SkillPillListComponent"
 
 function formatExperienceDisplayName(experience: Experience): string {
   return `${experience.position} @ ${experience.companyName}`

@@ -8,14 +8,22 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "extends": [
-    "eslint:recommended", // Recommended ESLint rules
-    "plugin:react/recommended",
-    "plugin:@typescript-eslint/recommended" // Recommended rules for TypeScript
-  ],
+  "settings": {
+    "import/resolver": {
+      "typescript": {}   // Use tsconfig.json paths for resolving imports
+    }
+  },
   "plugins": [
     "react",
-    "@typescript-eslint" // Use the TypeScript plugin
+    "@typescript-eslint", // Use the TypeScript plugin
+    "import"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript"
   ],
   "overrides": [],
   "rules": {
@@ -38,6 +46,49 @@
       "error",
       {
         "allow": ["private-constructors", "protected-constructors"]
+      }
+    ],
+    "import/order": [
+      "error",
+      {
+        "groups": [
+          "external",
+          "internal",
+          ["parent", "sibling", "index"]
+        ],
+        "pathGroups": [
+          {
+            "pattern": "react",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@components/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@messages/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@models/**",
+            "group": "internal",
+            "position": "after"
+          },
+          {
+            "pattern": "@styles/**",
+            "group": "internal",
+            "position": "after"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        }
       }
     ]
   }

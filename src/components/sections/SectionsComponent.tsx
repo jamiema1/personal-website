@@ -1,15 +1,18 @@
 import React from "react"
+
 import { SectionRefType } from "@components/app/App"
+import AboutSectionComponent from "@components/sections/aboutSection/AboutSectionComponent"
+import ExperienceSectionComponent from "@components/sections/experienceSection/ExperienceSectionComponent"
+import ProjectsSectionComponent from "@components/sections/projectsSection/ProjectsSectionComponent"
+import SkillsSectionComponent from "@components/sections/skillsSection/SkillsSectionComponent"
+
 import {
   AboutSectionDisplayName,
   ExperienceSectionDisplayName,
   ProjectsSectionDisplayName,
   SkillsSectionDisplayName
 } from "@messages/messages"
-import AboutSectionComponent from "@components/sections/aboutSection/AboutSectionComponent"
-import ExperienceSectionComponent from "@components/sections/experienceSection/ExperienceSectionComponent"
-import SkillsSectionComponent from "@components/sections/skillsSection/SkillsSectionComponent"
-import ProjectsSectionComponent from "@components/sections/projectsSection/ProjectsSectionComponent"
+
 import "./Sections.scss"
 
 interface SectionsProps {

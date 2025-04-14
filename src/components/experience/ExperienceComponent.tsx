@@ -1,11 +1,17 @@
 /* eslint-disable max-len */
 import React, { useState } from "react"
-import { Experience } from "@models/experience"
-import { ExperiencePresentDisplayMessage } from "messages/messages"
-import SkillPillListComponent from "@components/skillPillList/SkillPillListComponent"
-import "./Experience.scss"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { faCircleChevronDown, faCircleChevronUp } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import SkillPillListComponent from "@components/skillPillList/SkillPillListComponent"
+
+import { ExperiencePresentDisplayMessage } from "@messages/messages"
+
+import { Experience } from "@models/experience"
+
+
+import "./Experience.scss"
 
 function formatExperienceDisplayName(experience: Experience): string {
   return `${experience.position} @ ${experience.companyName}`

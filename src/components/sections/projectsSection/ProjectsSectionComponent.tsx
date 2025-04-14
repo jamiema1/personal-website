@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react"
-import { ALL_PROJECTS } from "@models/project"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { faSquareGithub } from "@fortawesome/free-brands-svg-icons"
-import SkillPillListComponent from "@components/skillPillList/SkillPillListComponent"
-import "./ProjectsSection.scss"
 import { faCircleChevronLeft, faCircleChevronRight } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import SkillPillListComponent from "@components/skillPillList/SkillPillListComponent"
+
+import { ALL_PROJECTS } from "@models/project"
+
+import "./ProjectsSection.scss"
 
 const ProjectsSectionComponent: React.FC = () => {
 

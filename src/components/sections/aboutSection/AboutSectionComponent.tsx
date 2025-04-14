@@ -1,9 +1,12 @@
 import React from "react"
-import { AboutDescription, AboutGreeting } from "@messages/messages"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
 import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import "./AboutSection.scss"
 import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+
+import { AboutDescription, AboutGreeting } from "@messages/messages"
+
+import "./AboutSection.scss"
 
 const AboutSectionComponent: React.FC = () => {
   const size = "2x"

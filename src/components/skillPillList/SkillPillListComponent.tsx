@@ -1,5 +1,7 @@
 import React from "react"
+
 import { Skill } from "@models/skill"
+
 import "./SkillPillList.scss"
 
 interface SkillPillListProps {

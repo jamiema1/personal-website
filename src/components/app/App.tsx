@@ -1,6 +1,8 @@
 import React, { useRef } from "react"
+
 import NavBarComponent from "@components/navBar/NavBarComponent"
 import SectionsComponent from "@components/sections/SectionsComponent"
+
 import "./App.scss"
 
 export type SectionRefType = HTMLDivElement | null

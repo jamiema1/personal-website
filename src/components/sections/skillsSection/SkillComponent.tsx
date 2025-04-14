@@ -1,5 +1,7 @@
 import React, { useRef } from "react"
+
 import { Skill } from "@models/skill"
+
 import "devicon/devicon.min.css"
 
 interface SkillComponentProps {

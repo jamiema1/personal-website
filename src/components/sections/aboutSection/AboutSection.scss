@@ -1,4 +1,5 @@
 @use "@styles/spacing.scss";
+@use "@styles/colour.scss";
 
 $logo-size: 50px;
 
@@ -19,11 +20,16 @@ $logo-size: 50px;
     gap: spacing.$medium;
 
     .link {
-      width: $logo-size;
-      height: $logo-size;
-      background-color: black;
-      border-radius: 50%;
+      transition: all 0.3s ease;
+      color: inherit;
+      text-decoration: none;
+  
+      &:hover {
+        color: colour.$accent;
+        scale: 1.05;
+      }
     }
+
   }
 
 }

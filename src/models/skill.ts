@@ -1,70 +1,112 @@
 export interface Skill {
   name: string
+  icon?: string
 }
 
 export class Skills {
+  static readonly git: Skill = {
+    name: "Git",
+    icon: "devicon-git-plain"
+  }
+
+  static readonly vscode: Skill = {
+    name: "VS Code",
+    icon: "devicon-vscode-plain"
+  }
+ 
+  static readonly intellij: Skill = {
+    name: "IntelliJ",
+    icon: "devicon-intellij-plain"
+  }
+
   static readonly javascript: Skill = {
-    name: "JavaScript"
+    name: "JavaScript",
+    icon: "devicon-javascript-plain"
   }
 
   static readonly typescript: Skill = {
-    name: "TypeScript"
+    name: "TypeScript",
+    icon: "devicon-typescript-plain"
   }
 
   static readonly css: Skill = {
-    name: "CSS"
+    name: "CSS",
+    icon: "devicon-css3-plain"
   }
 
   static readonly html: Skill = {
-    name: "HTML"
+    name: "HTML",
+    icon: "devicon-html5-plain"
   }
 
   static readonly scala: Skill = {
-    name: "Scala"
+    name: "Scala",
+    icon: "devicon-scala-plain"
   }
 
   static readonly python: Skill = {
-    name: "Python"
+    name: "Python",
+    icon: "devicon-python-plain"
   }
 
   static readonly react: Skill = {
-    name: "React"
+    name: "React",
+    icon: "devicon-react-original"
   }
 
   static readonly angular: Skill = {
-    name: "Angular"
+    name: "Angular",
+    icon: "devicon-angularjs-plain"
   }
 
   static readonly less: Skill = {
-    name: "LESS"
+    name: "LESS",
+    icon: "devicon-less-plain-wordmark"
   }
 
-  static readonly sql: Skill = {
-    name: "SQL"
+  static readonly sass: Skill = {
+    name: "SASS",
+    icon: "devicon-sass-original"
+  }
+
+  static readonly tailwind: Skill = {
+    name: "Tailwind CSS",
+    icon: "devicon-tailwindcss-original"
+  }
+
+  static readonly mysql: Skill = {
+    name: "MySQL",
+    icon: "devicon-mysql-original"
   }
 
   static readonly java: Skill = {
-    name: "Java"
+    name: "Java",
+    icon: "devicon-java-plain"
   }
 
   static readonly cPlusPlus: Skill = {
-    name: "C++"
+    name: "C++",
+    icon: "devicon-cplusplus-plain"
   }
 
   static readonly r: Skill = {
-    name: "R"
+    name: "R",
+    icon: "devicon-r-plain"
   }
 
   static readonly aws: Skill = {
-    name: "AWS"
+    name: "AWS",
+    icon: "devicon-amazonwebservices-plain-wordmark"
   }
 
   static readonly node: Skill = {
-    name: "Node.js"
+    name: "Node.js",
+    icon: "devicon-nodejs-plain"
   }
 
   static readonly jUnit: Skill = {
-    name: "JUnit"
+    name: "JUnit",
+    icon: "devicon-junit-plain"
   }
 
   static readonly reactNative: Skill = {
@@ -82,9 +124,17 @@ export class Skills {
   static readonly powerAutomate: Skill = {
     name: "Power Automate"
   }
+
+  static readonly d3: Skill = {
+    name: "D3",
+    icon: "devicon-d3js-plain"
+  }
 }
 
 export const ALL_SKILLS: Skill[] = [
+  Skills.git,
+  Skills.vscode,
+  Skills.intellij,
   Skills.javascript,
   Skills.typescript,
   Skills.css,
@@ -94,7 +144,9 @@ export const ALL_SKILLS: Skill[] = [
   Skills.react,
   Skills.angular,
   Skills.less,
-  Skills.sql,
+  Skills.sass,
+  Skills.tailwind,
+  Skills.mysql,
   Skills.java,
   Skills.cPlusPlus,
   Skills.r,
@@ -105,4 +157,5 @@ export const ALL_SKILLS: Skill[] = [
   Skills.expo,
   Skills.powerBI,
   Skills.powerAutomate,
+  Skills.d3,
 ]

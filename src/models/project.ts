@@ -16,7 +16,7 @@ export const ALL_PROJECTS: Project[] = [
       Skills.javascript,
       Skills.css,
       Skills.html,
-      Skills.sql,
+      Skills.mysql,
       Skills.aws,
       Skills.node,
     ]

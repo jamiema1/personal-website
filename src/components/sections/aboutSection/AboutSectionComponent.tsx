@@ -1,25 +1,54 @@
 import React from "react"
 import { AboutDescription, AboutGreeting } from "@messages/messages"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import "./AboutSection.scss"
+import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons"
 
 const AboutSectionComponent: React.FC = () => {
+  const size = "2x"
+  const githubLink = "https://github.com/jamiema1"
+  const linkedInLink = "https://www.linkedin.com/in/jamiekma/"
+  const profilePicture = "https://avatars.githubusercontent.com/u/97584835?v=4"
+
   return (
     <div className="aboutSection">
       <div>
         <img
           className="image"
-          src="https://avatars.githubusercontent.com/u/97584835?v=4"></img>
+          src={profilePicture}></img>
         <div className="links">
-          <div className="link">
-            {/* Github Logo */}
-          </div>
-          <div className="link">
-            {/* LinkedIn Logo */}
-          </div>
-          <div className="link">
-            {/* Resume Logo */}
-          </div>
-
+          <a 
+            className="link"
+            target="_blank"
+            href={githubLink}
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faSquareGithub}
+              size={size}
+            />
+          </a>
+          <a 
+            className="link"
+            target="_blank"
+            href={linkedInLink}
+            rel="noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={faLinkedin}
+              size={size}
+            />
+          </a>
+          <a
+            className="link"
+            href="mailto:jkmm.1024@gmail.com"
+          >
+            <FontAwesomeIcon
+              icon={faSquareEnvelope}
+              size={size}
+            />
+          </a>
         </div>
       </div>
       <div>

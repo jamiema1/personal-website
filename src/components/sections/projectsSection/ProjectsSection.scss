@@ -30,11 +30,7 @@ $project-image-size: 200px;
 
   .projectsList {
     display: flex;
-    // grid-auto-flow: column;
-    // grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-    // grid-template-columns: repeat(auto-fill, 300px);
-    // gap: 10%;
-    transition: transform 0.3s ease;
+    transition: transform 0.7s ease;
   
     .project {
       width: 100%;

@@ -22,6 +22,7 @@
     "indent": ["error", 2],
     "max-lines": ["error", 300],
     "semi": ["error", "never"],
+    "quotes": ["error", "double"],
     "max-len": [
       "error",
       80,

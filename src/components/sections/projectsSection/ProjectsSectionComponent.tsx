@@ -13,7 +13,7 @@ const ProjectsSectionComponent: React.FC = () => {
   }, [index])
 
   function updateCarousel() {
-    const track: HTMLDivElement | null = document.querySelector('.projectsList')
+    const track: HTMLDivElement | null = document.querySelector(".projectsList")
     if (track) {
       const itemWidth = track.clientWidth / totalItems
       const translateXValue = -itemWidth * index

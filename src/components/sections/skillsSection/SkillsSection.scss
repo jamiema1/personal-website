@@ -5,7 +5,8 @@
 $skill-width: 200px;
 $skill-height: 200px;
 
-$skill-logo-size: 100px;
+$skill-logo-font-size: 100px;
+$skill-logo-size: $skill-logo-font-size + 10px;
 
 .skillsSection {
   width: 100%;
@@ -22,34 +23,23 @@ $skill-logo-size: 100px;
       text-align: center;
       align-content: center;
       font-size: font.$large;
-      // border: 3px solid black;
+      
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
       border-radius: 10px;
       background-color: colour.$secondary;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      transition: color 0.3s ease;
 
       .skillLogo {
-        font-size: $skill-logo-size;
-        position: relative;
-        // display: flex;
-        // justify-content: center;
-        // align-items: center;
+        height: $skill-logo-size;
+        font-size: $skill-logo-font-size;
         margin-bottom: spacing.$small;
-
-        .hide {
-          opacity: 0;
-        }
       }
 
       .skillName {
         font-size: font.$medium;
-      }
-      
-      &:hover {
-        // color: colour.$accent;
       }
     }
   }

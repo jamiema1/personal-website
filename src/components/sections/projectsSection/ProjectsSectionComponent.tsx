@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react"
 import { ALL_PROJECTS } from "@models/project"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSquareGithub } from "@fortawesome/free-brands-svg-icons"
 import SkillPillListComponent from "@components/skillPillList/SkillPillListComponent"
 import "./ProjectsSection.scss"
+import { faCircleChevronLeft, faCircleChevronRight } from "@fortawesome/free-solid-svg-icons"
 
 const ProjectsSectionComponent: React.FC = () => {
 
@@ -40,11 +43,21 @@ const ProjectsSectionComponent: React.FC = () => {
         <div
           className="projectButton"
           onClick={() => handlePrev()}
-        ></div>
+        >
+          <FontAwesomeIcon
+            icon={faCircleChevronLeft}
+            size="2x"
+          />
+        </div>
         <div
           className="projectButton"
           onClick={() => handleNext()}
-        ></div>
+        >
+          <FontAwesomeIcon
+            icon={faCircleChevronRight}
+            size="2x"
+          />
+        </div>
       </div>
       <div className="projectCarousel">
         <div className="projectsList">
@@ -60,6 +73,19 @@ const ProjectsSectionComponent: React.FC = () => {
                   <div className="projectDescription">
                     {project.description}
                   </div>
+                </div>
+                <div>
+                  <a 
+                    className="link"
+                    target="_blank"
+                    href={project.githubLink}
+                    rel="noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faSquareGithub}
+                      size="2x"
+                    />
+                  </a>
                 </div>
                 <SkillPillListComponent skills={project.skills} />
               </div>

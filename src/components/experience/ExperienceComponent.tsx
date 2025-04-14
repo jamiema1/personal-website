@@ -4,13 +4,15 @@ import { Experience } from "@models/experience"
 import { ExperiencePresentDisplayMessage } from "messages/messages"
 import SkillPillListComponent from "@components/skillPillList/SkillPillListComponent"
 import "./Experience.scss"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faCircleChevronDown, faCircleChevronUp } from "@fortawesome/free-solid-svg-icons"
 
 function formatExperienceDisplayName(experience: Experience): string {
   return `${experience.position} @ ${experience.companyName}`
 }
 
 function formatTimeDisplayName(experience: Experience): string {
-  const options: Intl.DateTimeFormatOptions = { month: 'short', year: 'numeric' }
+  const options: Intl.DateTimeFormatOptions = { month: "short", year: "numeric" }
   const formattedStartDate = experience.startDate.toLocaleString("en-US", options)
   const formattedEndDate = experience.endDate?.toLocaleString("en-US", options) ?? ExperiencePresentDisplayMessage
   return `${formattedStartDate} - ${formattedEndDate}`
@@ -24,10 +26,10 @@ const ExperienceComponent: React.FC<ExperienceProps> = (props) => {
 
   const experience = props.experience
 
-  const [state, setState] = useState(false)
+  const [open, setOpen] = useState(false)
 
   const handleClick = () => {
-    setState(!state)
+    setOpen(!open)
   }
 
   return (
@@ -40,12 +42,21 @@ const ExperienceComponent: React.FC<ExperienceProps> = (props) => {
         <div>
           {formatExperienceDisplayName(experience)}
         </div>
-        <div
-          className="dropdownIcon"
-          // todo: jma - add dropdown icon
-        ></div>
+        {open ? 
+          <div className="dropdownIcon">
+            <FontAwesomeIcon
+              icon={faCircleChevronUp}
+              size="2x"
+            />
+          </div> :
+          <div className="dropdownIcon">
+            <FontAwesomeIcon
+              icon={faCircleChevronDown}
+              size="2x"
+            />
+          </div>}
       </div>
-      {state &&
+      {open &&
        <div>
          <div className="experienceDate">
            {formatTimeDisplayName(experience)}

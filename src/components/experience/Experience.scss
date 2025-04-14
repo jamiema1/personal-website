@@ -6,7 +6,7 @@ $dropdown-icon-size: 25px;
 
 .experience {
   font-size: font.$medium;
-  border: 3px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   background-color: colour.$secondary;
   padding: spacing.$large spacing.$medium;
@@ -23,10 +23,10 @@ $dropdown-icon-size: 25px;
     align-items: center;
 
     .dropdownIcon {
-      width: $dropdown-icon-size;
-      height: $dropdown-icon-size;
-      background-color: black;
-      border-radius: 50%;
+      &:hover {
+        color: colour.$accent;
+        scale: 1.05;
+      }
     }
   }
 

@@ -4,7 +4,7 @@ import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-import { AboutDescription, AboutGreeting } from "@messages/messages"
+import { AboutDescription, AboutGreeting, AboutName } from "@messages/messages"
 
 import "./AboutSection.scss"
 
@@ -56,6 +56,8 @@ const AboutSectionComponent: React.FC = () => {
       </div>
       <div>
         <div>{AboutGreeting}</div>
+        <div className="aboutName">{AboutName}</div>
+        <br></br>
         <span>{AboutDescription}</span>
       </div>
     </div>

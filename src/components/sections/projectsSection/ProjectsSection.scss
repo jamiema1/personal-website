@@ -17,9 +17,11 @@ $project-image-size: 200px;
   padding-bottom: 10px;
 
   .projectButton {
+    transition: scale 0.3s ease;
+
     &:hover {
-      color: colour.$accent;
       scale: 1.05;
+      cursor: pointer;
     }
   }
 }

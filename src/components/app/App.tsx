@@ -1,5 +1,6 @@
 import React, { useRef } from "react"
 
+import FooterComponent from "@components/footer/FooterComponent"
 import NavBarComponent from "@components/navBar/NavBarComponent"
 import SectionsComponent from "@components/sections/SectionsComponent"
 
@@ -28,7 +29,7 @@ const App: React.FC = () => {
         projectsSectionRef={projectsSectionRef}
         skillsSectionRef={skillsSectionRef}
       />
-      {/* <div>Footer</div> TODO: jma - add a footer */}
+      <FooterComponent />
     </div>
   )
 }

@@ -1,10 +1,12 @@
-@use "@styles/spacing.scss";
+@use "@styles/font.scss";
 @use "@styles/colour.scss";
+@use "@styles/spacing.scss";
 
 $logo-size: 50px;
 
 .aboutSection {
 
+  padding: 0px spacing.$xxx-large;
   display: flex;
 
   .image {
@@ -29,7 +31,11 @@ $logo-size: 50px;
         scale: 1.05;
       }
     }
+  }
 
+  .aboutName {
+    font-size: font.$xx-large;
+    color: colour.$accent;
   }
 
 }

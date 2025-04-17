@@ -28,6 +28,11 @@ $nav-bar-height: 80px;
       font-size: font.$large;
       margin: spacing.$small;
       text-align: center;
+
+      &:hover {
+        color: colour.$accent;
+        cursor: pointer;
+      }
       // todo: jma - add hover effect
     }
   }

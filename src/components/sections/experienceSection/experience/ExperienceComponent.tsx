@@ -10,7 +10,6 @@ import { ExperiencePresentDisplayMessage } from "@messages/messages"
 
 import { Experience } from "@models/experience"
 
-
 import "./Experience.scss"
 
 function formatExperienceDisplayName(experience: Experience): string {
@@ -39,40 +38,27 @@ const ExperienceComponent: React.FC<ExperienceProps> = (props) => {
   }
 
   return (
-    <div
-      key={experience.companyName}
-      className="experience"
-      onClick={() => handleClick()}
-    >
-      <div className="collapsedExperienceContainer">
+    <div className={`experience ${open ? "expand" : "collapse"}`}>
+      <div className="experinceHeader" onClick={() => handleClick()}>
         <div>
           {formatExperienceDisplayName(experience)}
         </div>
-        {open ? 
-          <div className="dropdownIcon">
-            <FontAwesomeIcon
-              icon={faCircleChevronUp}
-              size="2x"
-            />
-          </div> :
-          <div className="dropdownIcon">
-            <FontAwesomeIcon
-              icon={faCircleChevronDown}
-              size="2x"
-            />
-          </div>}
+        <div className="dropdownIcon">
+          <FontAwesomeIcon
+            icon={open ? faCircleChevronUp : faCircleChevronDown}
+            size="2x"
+          />
+        </div>
       </div>
-      {open &&
-       <div>
-         <div className="experienceDate">
-           {formatTimeDisplayName(experience)}
-         </div>
-         <div className="experienceDescription">
-           {experience.description}
-         </div>
-         <SkillPillListComponent skills={experience.skills} />
-       </div>
-      }
+      <div className={`experienceBody ${open ? "expand" : "collapse"}`}>
+        <div className="experienceDate">
+          {formatTimeDisplayName(experience)}
+        </div>
+        <div className="experienceDescription">
+          {experience.description}
+        </div>
+        <SkillPillListComponent skills={experience.skills} />
+      </div>
     </div>
   )
 }

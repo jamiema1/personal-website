@@ -1,0 +1,62 @@
+@use "@styles/font.scss";
+@use "@styles/colour.scss";
+@use "@styles/spacing.scss";
+
+$dropdown-icon-size: 25px;
+
+.experience {
+  font-size: font.$medium;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: colour.$secondary;
+  padding: spacing.$large spacing.$medium;
+  margin: spacing.$small;
+  transition: scale 0.3s ease;
+
+  &:hover, &.expand {
+    scale: 1.02;
+  }
+
+  .experinceHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .dropdownIcon {
+      color: colour.$secondary;
+      background-color: colour.$font;
+      border-radius: 50%;
+    }
+  }
+
+  .experienceBody {
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.8s ease;
+    max-height: 0;
+    opacity: 0;
+
+    &.expand {
+      max-height: 500px; // TODO: jma - make this dynamic relative to content
+      opacity: 1;
+    }
+
+    &.collapse {
+      max-height: 0;
+      opacity: 0;
+    }
+
+    .experienceDate {
+      font-style: italic;
+      font-size: font.$small-medium;
+      padding: spacing.$small 0px;
+    }
+  
+    .experienceDescription {
+      font-size: font.$small-medium;
+    }
+  }
+}

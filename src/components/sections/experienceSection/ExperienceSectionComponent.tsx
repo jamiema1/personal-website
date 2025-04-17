@@ -1,7 +1,6 @@
-/* eslint-disable max-len */
 import React from "react"
 
-import ExperienceComponent from "@components/experience/ExperienceComponent"
+import ExperienceComponent from "@components/sections/experienceSection/experience/ExperienceComponent"
 
 import { ALL_EXPERIENCES } from "@models/experience"
 

@@ -49,13 +49,13 @@ const SectionsComponent: React.FC<SectionsProps> = (props) => {
         </h1>
         <ProjectsSectionComponent />
       </div>
-      {/* <div className="section"
+      <div className="section"
         ref={props.skillsSectionRef}>
         <h1 className="sectionHeader">
           {SkillsSectionDisplayName}
         </h1>
         <SkillsSectionComponent />
-      </div> */}
+      </div>
 
     </div>
   )

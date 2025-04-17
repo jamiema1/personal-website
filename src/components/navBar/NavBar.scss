@@ -28,9 +28,11 @@ $nav-bar-height: 80px;
       font-size: font.$large;
       margin: spacing.$small;
       text-align: center;
+      transition: all 0.3s ease;
 
       &:hover {
         color: colour.$accent;
+        scale: 1.02;
         cursor: pointer;
       }
       // todo: jma - add hover effect

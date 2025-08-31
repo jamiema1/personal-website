@@ -54,8 +54,9 @@ const ExperienceComponent: React.FC<ExperienceProps> = (props) => {
         <div className="experienceDate">
           {formatTimeDisplayName(experience)}
         </div>
-        <div className="experienceDescription">
-          {experience.description}
+        <div
+          className="experienceDescription"
+          dangerouslySetInnerHTML={{ __html: experience.description }}>
         </div>
         <SkillPillListComponent skills={experience.skills} />
       </div>

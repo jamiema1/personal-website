@@ -14,7 +14,14 @@ export const ALL_EXPERIENCES: Experience[] = [
   {
     position: "Software Developer Co-op",
     companyName: "Visier",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+      <ul>
+        <li>Enhanced core features of the flagship platform, Visier People, as a full-stack developer (Angular & Scala)</li>
+        <li>Elaborated and developed a high-impact feature showcased during a company-wide quarterly meeting</li>
+        <li>Implemented AI-powered summarization features within the core application</li>
+        <li>Validated and tested bug fixes during weekly review sessions to ensure regressions were not introduced</li>
+      </ul>
+    `,
     startDate: new Date(2024, 4),
     endDate: new Date(2024, 11),
     skills: [
@@ -29,7 +36,15 @@ export const ALL_EXPERIENCES: Experience[] = [
   {
     position: "Global Talent Technology Co-op",
     companyName: "Teck Resources",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+      <ul>
+        <li>Supported recruiters globally via the sustainment of 18 applications within the recruitment technology stack</li>
+        <li>Saved numerous FTEs by producing and sustaining critical Python scripts that automate daily manual tasks</li>
+        <li>Utilized 15+ Power Automate flows to document and resolve 600+ issues raised by clients</li>
+        <li>Crafted Power BI dashboards to highlight KPIs used to justify application adoption, usage, and renewal</li>
+        <li>Integrated four recruitment technologies into the enterprise HRIS system (SAP SuccessFactors)</li>
+      </ul>
+    `,
     startDate: new Date(2023, 4),
     endDate: new Date(2023, 11),
     skills: [
@@ -39,9 +54,16 @@ export const ALL_EXPERIENCES: Experience[] = [
     ]
   },
   {
-    position: "Undergraduate Teaching Assistant",
+    position: "Undergraduate Teaching Assistant - Computer Science",
     companyName: "University of British Columbia",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+      <ul>
+        <li>Aided up to 30 students per class in the completion of weekly labs and other course related work</li>
+        <li>Provided one-on-one assistance and guidance during weekly office hours</li>
+        <li>Collaborated with course staff during weekly meetings to update and improve course material</li>
+        <li>Accurately marked problem sets, assignments, and exams in a timely manner</li>
+      </ul>
+    `,
     startDate: new Date(2022, 0),
     endDate: new Date(2023, 3),
     skills: []

@@ -1,0 +1,19 @@
+@use "@styles/colour.scss";
+@use "@styles/spacing.scss";
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: spacing.$medium;
+
+    .link {
+      transition: all 0.3s ease;
+      color: inherit;
+      text-decoration: none;
+  
+      &:hover {
+        color: colour.$accent;
+        scale: 1.05;
+      }
+    }
+  }

@@ -1,17 +1,12 @@
 import React from "react"
 
-import { faSquareGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faSquareEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-
 import { AboutDescription, AboutGreeting, AboutName } from "@messages/messages"
+
+import AboutSectionLinksComponent from "./AboutSectionLinksComponent"
 
 import "./AboutSection.scss"
 
 const AboutSectionComponent: React.FC = () => {
-  const size = "2x"
-  const githubLink = "https://github.com/jamiema1"
-  const linkedInLink = "https://www.linkedin.com/in/jamiekma/"
   const profilePicture = "https://avatars.githubusercontent.com/u/97584835?v=4"
 
   return (
@@ -19,43 +14,13 @@ const AboutSectionComponent: React.FC = () => {
       <div>
         <img
           className="image"
-          src={profilePicture}></img>
-        <div className="links">
-          <a 
-            className="link"
-            target="_blank"
-            href={githubLink}
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faSquareGithub}
-              size={size}
-            />
-          </a>
-          <a 
-            className="link"
-            target="_blank"
-            href={linkedInLink}
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              size={size}
-            />
-          </a>
-          <a
-            className="link"
-            href="mailto:jkmm.1024@gmail.com"
-          >
-            <FontAwesomeIcon
-              icon={faSquareEnvelope}
-              size={size}
-            />
-          </a>
-        </div>
+          src={profilePicture}>
+        </img>
+        <AboutSectionLinksComponent />
       </div>
       <div>
         <div>{AboutGreeting}</div>
+        <br></br>
         <div className="aboutName">{AboutName}</div>
         <br></br>
         <span>{AboutDescription}</span>

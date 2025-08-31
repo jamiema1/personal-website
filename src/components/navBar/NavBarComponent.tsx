@@ -41,11 +41,11 @@ const NavBarComponent: React.FC<NavBarProps> = (props) => {
           onClick={() => scrollToSection(props.projectsSectionRef)}>
           {ProjectsSectionDisplayName}
         </li>
-        <li
+        {/* <li
           className="navBarItem"
           onClick={() => scrollToSection(props.skillsSectionRef)}>
           {SkillsSectionDisplayName}
-        </li>
+        </li> */}
       </ul>
     </nav>
   )

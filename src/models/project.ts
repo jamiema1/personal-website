@@ -11,7 +11,13 @@ interface Project {
 export const ALL_PROJECTS: Project[] = [
   {
     name: "Boulder Tracker",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+    <ul>
+      <li>Built a full-stack web application that allows users to track their progress when bouldering</li>
+      <li>Developed a responsive React frontend with create, read, update, and delete functionality</li>
+      <li>Created a REST API backend using Express and Node connected to a MySQL database hosted on AWS</li>
+    </ul>
+    `,
     githubLink: "https://github.com/jamiema1/boulder-tracker-v2",
     skills: [
       Skills.react,
@@ -25,7 +31,12 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     name: "Notifire",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+    <ul>
+      <li>Produced a mobile application to raise awareness and alert users of nearby forest fire hazards</li>
+      <li>Designed and implemented during a 24-hour hackathon (nwHacks 2024)</li>
+    </ul>
+    `,
     githubLink: "https://github.com/jamiema1/Notifire",
     skills: [
       Skills.reactNative,
@@ -35,7 +46,12 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     name: "Mining, Eh?",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+    <ul>
+      <li>Implemented an interactive D3.js visualization to help users explore Canada’s rich mining history</li>
+      <li>Standardized raw data to surface new metrics that enabled deeper insights and consistent analysis</li>
+    </ul>
+    `,
     githubLink: "https://github.com/jamiema1/Mining-Eh",
     skills: [
       Skills.javascript,
@@ -46,7 +62,12 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     name: "Minute Mood",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+    <ul>
+      <li>Produced a full-stack web application to enhance mindfulness using a 5-minute journal</li>
+      <li>Designed and implemented during a 12-hour hackathon (HackCamp 2023)</li>
+    </ul>
+    `,
     githubLink: "http://github.com/jamiema1/Minute-Mood",
     skills: [
       Skills.react,
@@ -57,7 +78,12 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     name: "2048",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+    <ul>
+      <li>Constructed a GUI with Pygame replicating the original game</li>
+      <li>Followed the test-driven development process using the unittest testing framework</li>
+    </ul>
+    `,
     githubLink: "http://github.com/jamiema1/2048",
     skills: [
       Skills.python,
@@ -65,7 +91,13 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     name: "Minesweeper",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+    <ul>
+      <li>Designed an interactive GUI using Java Swing and JFrame</li>
+      <li>Utilized test-driven development using the JUnit 5 testing framework</li>
+      <li>Implemented data persistence through JSON files</li>
+    </ul>
+    `,
     githubLink: "https://github.com/jamiema1/Minesweeper",
     skills: [
       Skills.java,
@@ -74,7 +106,12 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     name: "Baseball Simulator",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+    <ul>
+      <li>Developed a comprehensive CUI to model outcomes based on recent historical data</li>
+      <li>Refactored existing code to follow OOP idioms to improve code structure and readability</li>
+    </ul>
+    `,
     githubLink: "https://github.com/jamiema1/Baseball-Simulator",
     skills: [
       Skills.cPlusPlus,
@@ -82,7 +119,13 @@ export const ALL_PROJECTS: Project[] = [
   },
   {
     name: "Predicting Heart Disease",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed nibh risus. Aliquam blandit velit fermentum velit imperdiet mattis. Vestibulum suscipit efficitur nulla vel consequat. Quisque nisl lorem, tristique eu nibh ac, convallis auctor ex. Mauris nulla ante, ornare quis scelerisque nec, faucibus ut libero. Sed at bibendum urna, eget ornare leo. Ut vitae luctus ante. Pellentesque tempus risus ut blandit rutrum. Sed et turpis non erat sollicitudin porttitor in at libero. Mauris aliquam et lectus quis dapibus. Nullam at scelerisque magna. In tristique fringilla vestibulum. Aenean sagittis vehicula augue, rutrum tempor eros pellentesque a. Nunc dictum nisi quis egestas.",
+    description: `
+    <ul>
+      <li>Generated plots and graphs to justify design decisions and display findings</li>
+      <li>Parsed raw data into a readable format for data manipulation</li>
+      <li>Optimized accuracy by fine tuning parameters of the KNN classification algorithm</li>
+    </ul>
+    `,
     githubLink: "https://github.com/jamiema1/Predicting-Heart-Disease-with-KNN-Algorithm",
     skills: [
       Skills.r,

@@ -14,7 +14,7 @@ const AboutSectionLinksComponent: React.FC = () => {
     <div className="links">
       <a 
         className="link"
-        href={resume}
+        href={`/${resume}`}
         download={resume}
       >
         <FontAwesomeIcon

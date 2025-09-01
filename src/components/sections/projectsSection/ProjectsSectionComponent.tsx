@@ -74,9 +74,10 @@ const ProjectsSectionComponent: React.FC = () => {
                   <div className="projectName">
                     {project.name}
                   </div>
-                  <div className="projectDescription">
-                    {project.description}
-                  </div>
+                  <div
+                    className="projectDescription"
+                    dangerouslySetInnerHTML={{ __html: project.description }}
+                  ></div>
                 </div>
                 <div>
                   <a 

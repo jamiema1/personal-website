@@ -1,5 +1,6 @@
 {
   "name": "personal-website",
+  "homepage": "https://jamiema.ca",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -16,6 +17,7 @@
     "devicon": "^2.16.0",
     "eslint-import-resolver-typescript": "^4.3.2",
     "eslint-plugin-import": "^2.31.0",
+    "gh-pages": "^6.3.0",
     "node": "^18.18.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -25,7 +27,8 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "craco eject"
+    "eject": "craco eject",
+    "deploy": "gh-pages -d build --cname jamiema.ca"
   },
   "eslintConfig": {
     "extends": [

@@ -6,7 +6,6 @@ import {
   AboutSectionDisplayName,
   ExperienceSectionDisplayName,
   ProjectsSectionDisplayName,
-  SkillsSectionDisplayName,
 } from "@messages/messages"
 
 import "./NavBar.scss"
@@ -41,11 +40,6 @@ const NavBarComponent: React.FC<NavBarProps> = (props) => {
           onClick={() => scrollToSection(props.projectsSectionRef)}>
           {ProjectsSectionDisplayName}
         </li>
-        {/* <li
-          className="navBarItem"
-          onClick={() => scrollToSection(props.skillsSectionRef)}>
-          {SkillsSectionDisplayName}
-        </li> */}
       </ul>
     </nav>
   )
